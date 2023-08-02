@@ -28,6 +28,7 @@ html {
   font-size: 62.5%;
   color: #242329;
   background-color: #242329;
+  user-select: none;
 }
 
 ul,
