@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Oswald:wght@700&display=swap');
+
+::root {
+    /* FONT-FAMILY */
+    --title-font: 'Oswald', sans-serif;
+    --text-font: 'Inconsolata', monospace;
+
+    /* COLORS */
+    --base-color: #242329;
+    --secundary-color: #E3E2E1;
+    
+    /* FONT-SIZES*/
+    --font-48: 4.8em;
+    --font-20: 2.0em;
+
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Inconsolata', monospace;
+  font-size: 62.5%;
+  color: #242329;
+  background-color: #242329;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #242329;
+}
+
+p {
+  font-size: var(--font-20);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+
+}
+
+.card-front{
+    padding: 50px 46px;
+    background-color: #E3E2E1;
+    width: 362px;
+    border-radius: 7%;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), #E3E2E1);
+    box-shadow: 5px 0 5px rgba(0, 0, 0, 0.5);
+} 
+
+.card-title{
+    color: #242329;
+    font-family: Oswald;
+    font-size: 48px;
+    border-bottom: 1px solid #242329;
+}
+
+.card-text{
+    color: #242329;
+    font-size: 20px;
+    margin: 30px auto;
+}
+
+/* back */
+
+.card-title--back{
+    color: #242329;
+    font-family: Oswald;
+    font-size: 48px;
+    border-bottom: 1px solid #242329;
+}
+
+.list-back {
+    margin-top: 50px;
+}
+
+.redes-back{
+    display: flex;
+}
+
+svg {
+    width: 40px;
+}
+
+#github img {
+    width: 45px;
+}
+
+.card-text-back{
+    color: #242329;
+    font-size: 20px;
+    margin: 30px 10px;
+}
+
+#back-text{
+    color: #242329;
+    font-size: 20px;
+    margin: 24px auto;
+} 
+
+.card-back {
+    padding: 50px 46px;
+    background-color: #E3E2E1;
+    width: 362px;
+    border-radius: 7%;
+    display: none;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), #E3E2E1);
+    box-shadow: 5px 0 5px rgba(0, 0, 0, 0.5);
+
+}
+
+
+
+
+.card-cover:hover .card-back {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-cover:hover .card-front {
+   display: none;
+} 
